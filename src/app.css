@@ -1,3 +1,6 @@
+root{
+    
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,34 +9,41 @@
 body {
     font-family: "Poppins", sans-serif;
     --color1: #FFF ;
-    --color2: #4d2cf3 ;
+    --color2: #5811f3 ;
 }
 .nav-bar {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    display: flex; 
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     position: relative;
     background-color: var(--color2);
-    padding: 12px 0;
+    padding: 12px 20px;
+    color: var(--color1);
+}
+.nav-bar h1{
 }
 .logo img {width: 40px;}
 .menu {
     display: flex;
-    flex: 1;
 }
-.menu li {padding-left: 30px;}
+.menu li {padding-left: 10px;}
 .menu li a {
+    display: flex;
     text-decoration: none;
-    color: var(--color1);
-    text-align: center;
+    text-align: ce;
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: none;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    margin: auto;
+    color: var(--color1);
 }
 .menu li a::after {
     content: "";
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
@@ -43,10 +53,12 @@ body {
 }
 .menu li a:hover:after {width: 100%;}
 .open-menu , .close-menu {
+    position: absolute;
     color: var(--color1);
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
+    
 }
 .open-menu {
     top: 50%;
@@ -54,11 +66,12 @@ body {
     transform: translateY(-50%);
 }
 .close-menu {
-    top: 10px;
+    top: 20px;
     right: 20px;
 }
 #check {display: none;}
-@media(max-width: 610px){
+
+@media(max-width: 600px){
     .menu {
         flex-direction: column;
         align-items: center;
@@ -74,30 +87,72 @@ body {
     }
     .menu li {margin-top: 40px;}
     .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
+    .open-menu , .close-menu {
+        display: block;     
+    }
     #check:checked ~ .menu {right: 0;}
-    
-}
-.search {
-     margin-right:10px;
-}
-.hero-image {
-    display:flex;
-    background-image: url(/img/Flowers.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-    position:relative;
-    width:100%;
-    height:500px;
+
+    .searchbar {
+        width: 90%;
+        max-width: 100px;
+        display: inline-flex; 
+        margin: auto;
+        justify-content: center;
+
+    }
 }
 
-.hero-text h1{
-    position: absolute;
-    text-align:center;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+.searchbar {
+    width: 100%;
+    max-width: 100px;
+    display: inline-flex;   
+    justify-content: right;
+}
+
+.searchbar-input {
+    padding: 7px;
+    outline: none;
+    border: 1px solid #009897;
+    border-radius: 5px 0 0 5px;
+    background: #f4faf9;
+    transition: background 0.25s, box-shadow 0.25;
+}
+
+.searchbar-input:focus {
+    background: white;
+    box-shadow: 0 0 2px #8cc6ba;
+}
+
+.searchbar-input::placeholder {
+    color: #8cc6ba;
+}
+
+.searchbar-button {
+    width: 60px;
+    padding: 2px 2px 2px 2px;
+    background: #000879;
     color: white;
+    outline: none;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    user-select: none;
+} 
+
+.searchbar-button:active {
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.logo {
+    
+    align-items:start;
+    justify-content: left;
+}
+
+.logo h1 {
+    text-color: whitesmoke;
 }
