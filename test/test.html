@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger Menu</title>
+    <title>Joseph's Website</title>
     <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 <body>
     <header>
@@ -24,16 +24,83 @@
                 <button type="submit" class="searchbar-button">
                     <i class="material-icons">Go</i>
                 </button>
-            </li>
+            </li>         
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
     </nav>
     </header>
+    
 
-<div> 
-    <h1>Welcome to my porfolio</h1>
-</div>
+<!---------about------------>
 
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="profile.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('jobs')">Jobs</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>User Interface/User Experience</span><br>Creating Website Designs and Models</li>
+                        <li><span>Website Development</span><br>Creating Websites</li>
+                        <li><span>Photography</span><br>Taking Photos on Nikon E90</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="jobs">
+                    <ul>
+                        <li><span>2018 - Current</span><br>New World Assistant Supervisor</li>
+                        <li><span>2021</span><br>KT's Takeaways Staff Member</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education"">
+                    <ul>
+                        <li><span>2012 - 2014</span><br>St Peter Chanel</li>
+                        <li><span>2015 - 2016</span><br>Motueka South School</li>
+                        <li><span>2017 - 2021</span><br>Motueka High School</li>
+                        <li><span>2023 - Current</span><br>Nelson Marlborough Institute of Technology</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>What I like to do</span><br>Magic the Gathering<br>Going to the Gym</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
 
 </body>
 <footer> 
