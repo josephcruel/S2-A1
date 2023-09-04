@@ -43,6 +43,7 @@ body {
     padding: 0 20px 0 20px;
     margin: auto;
     color: var(--color1);
+    font-size: 20px;
 }
 .menu li a::after {
     content: "";
@@ -74,7 +75,7 @@ body {
 }
 #check {display: none;}
 
-/*--------------searchbar pt2 ---------------*/ 
+/*--------------Searchbar---------------*/ 
 
 .searchbar {
     width: 100%;
@@ -121,7 +122,7 @@ body {
 }
 
 
-/*----------------about me-------------------*/
+/*----------------About Me-------------------*/
 
 #about {
     padding: 80px 0;
@@ -151,6 +152,12 @@ body {
     font-size: 60px;
     font-weight: 600;
     color: #000;
+}
+
+.intro-text {
+    margin-bottom: 10px;
+    font-size: 25px;
+
 }
 
 .tab-titles {
@@ -264,7 +271,7 @@ body {
 }
 
 
-/*-----------Images-------------*/
+/*-------------Images---------------*/
 
 .container-skills {
     padding: 10px 10%;
@@ -274,7 +281,8 @@ body {
 .wrapper h1 {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 30px;;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .img-area {
@@ -285,8 +293,17 @@ body {
     justify-content: center;
 }
 
+.img-area p {
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    margin: 45px 0 30px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 .single-img {
-    padding: 0 15px 20px;
+    padding: 15px;
     
 }
 
@@ -300,6 +317,14 @@ img:hover {
     transition: .9s;
 }
 
+.line {
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+}
 
 /*---------------Contact Me------------------*/
 
@@ -345,7 +370,7 @@ img:hover {
     transform: translateY(-5px);
 }
 .btn {
-    background-color: #8cc6ba;
+    background-color: #5e489f;
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -374,7 +399,6 @@ textarea  {
 input {
     font-family: 'Outfit', sans-serif;
 }
-
 
 
 form input, form textarea {
