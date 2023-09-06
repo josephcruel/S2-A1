@@ -210,7 +210,31 @@ body {
 
 /*----------Small Screen-------------*/
 
-@media(max-width: 600px){
+@media(max-width: 950px){
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+
+    }
+
+}
+
+@media(max-width: 730px){
     .menu {
         flex-direction: column;
         align-items: center;
@@ -245,35 +269,95 @@ body {
         justify-content: center;
         align-items: center;
     }
+
 }
 
-@media(max-width: 950px){
-    .sub-title {
-        font-size: 40px;
-    }
 
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
-    }
-
-    .about-col-1 {
-        margin-bottom: 30px;;
-    }
-
-    .about-col-2 {
-        font-size: 14px;
-    }
-    .tab-links {
-        font-size: 16px;
-        margin-right: 20px;
-
+@media(max-width: 400px) {
+    .img-area-2 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-gap: 0px;
     }
 }
+
+
 
 
 /*-------------Images---------------*/
 
 .container-skills {
+    padding: 10px 10%;
+    padding-top: 20px;;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.img-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px, 1fr));
+    grid-gap: 20px;
+}
+
+.img-area-2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px, 1fr));
+    grid-gap: 5px;
+}
+
+.img-area-3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap: 0px;
+}
+
+.img-area-3 p{
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    margin: 45px 0 30px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.photography-img img {
+    height: 300px;
+    border: 2px solid #fff;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 7px;;
+}
+
+.double-img img {
+    height: 300px;
+    border: 2px solid #fff;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 7px;;
+}
+
+.text {
+    grid-column:span 3;
+}
+
+.line {
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+} 
+
+/* .container-skills {
     padding: 10px 10%;
     padding-top: 20px;;
 }
@@ -324,7 +408,7 @@ img:hover {
 
 .underline {
     text-decoration: underline;
-}
+} */
 
 /*---------------Contact Me------------------*/
 

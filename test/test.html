@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph's Website</title>
+    <title>Joseph's Website | Portfolio Page</title>
     <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+</head>
 <body>
+<!-------Navigation Bar------------->    
     <header>
     <nav>
         <ul class='nav-bar'>
             <input type='checkbox' id='check' />
             <span class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contacts</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contacts.html">Contacts</a></li>
+                <li><a href="AboutMe.html">About</a></li>
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </span>
             <li class="searchbar">
                 <input type="text" class="searchbar-input" name="search" placeholder="Search Website">
                 <button type="submit" class="searchbar-button">
-                    <i class="material-icons">Go</i>
+                    <i class="fas fa-search"></i>
                 </button>
             </li>         
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -30,80 +34,65 @@
     </nav>
     </header>
     
+<!----------Portfolio----------->   
 
-<!---------about------------>
+<div class="container-skills">
+<hr class="line" />
+<div class="wrapper">
+    <h1>Year 13 Photography Board</h1>
+<hr class="line" />
 
-    <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="profile.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('jobs')">Jobs</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>User Interface/User Experience</span><br>Creating Website Designs and Models</li>
-                        <li><span>Website Development</span><br>Creating Websites</li>
-                        <li><span>Photography</span><br>Taking Photos on Nikon E90</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="jobs">
-                    <ul>
-                        <li><span>2018 - Current</span><br>New World Assistant Supervisor</li>
-                        <li><span>2021</span><br>KT's Takeaways Staff Member</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education"">
-                    <ul>
-                        <li><span>2012 - 2014</span><br>St Peter Chanel</li>
-                        <li><span>2015 - 2016</span><br>Motueka South School</li>
-                        <li><span>2017 - 2021</span><br>Motueka High School</li>
-                        <li><span>2023 - Current</span><br>Nelson Marlborough Institute of Technology</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="hobbies">
-                    <ul>
-                        <li><span>What I like to do</span><br>Magic the Gathering<br>Going to the Gym</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div class="img-area">
+        <div class="single-img"><img src="img/Cards1.jpg" alt="Faling Chips"></div>
+        <div class="single-img"><img src="img/Cards2.jpg" alt="Throwing Chips"></div>
+        <div class="single-img"><img src="img/Cards3.jpg" alt="Playing Cards"></div>
+        <div class="single-img"><img src="img/Pool1.jpg" alt="Pool Balls"></div>
+        <div class="single-img"><img src="img/Pool2.jpg" alt="Pool Balls"></div>
+        <div class="single-img"><img src="img/Pool3.jpg" alt="Cue Shot"></div>
+        <div class="single-img"><img src="img/Darts1.jpg" alt="Pile of Darts"></div>
+        <div class="single-img"><img src="img/Darts2.jpg" alt="Aligned Darts"></div>
+        <div class="single-img"><img src="img/Darts3.jpg" alt="Taking Aim"></div>
+        <div class="single-img"><img src="img/Cards4.jpg" alt="Pile of Cards"></div>
+        <div class="single-img"><img src="img/Cards5.jpg" alt="Jokers and Kings"></div>
+        <div class="single-img"><img src="img/Cards6.jpg" alt="Domino Cards"></div>
     </div>
+</div>
+
+<hr class="line">
+
+<div class="wrapper">
+    <h1>Year 13 DGT Website</h1>
+<hr class="line" />
+
+    <div class="img-area">
+        <p class="underline">Home Page</p>
+        <div class="single-img"><img src="img/HomePageSP.png" alt="Home Page 1" height="983px" width="542px"></div>
+        <div class="single-img"><img src="img/HomePage2SP.png" alt="Home Page 2" height="983px" width="542px"></div>
+        <p class="underline">Save the Environment Page</p>
+        <div class="single-img"><img src="img/SaveSolarSP.png" alt="Save Solar 1" height="983px" width="542px"></div>
+        <div class="single-img"><img src="img/SaveSolar2SP.png" alt="save Solar 2" height="983px" width="542px"></div>
+        <p class="underline">How Solar Power Works Page</p>
+        <div class="single-img"><img src="img/SolarPowerSP.png" alt="Solar Power 1" height="983px" width="542px"></div>
+        <div class="single-img"><img src="img/SolarPower2SP.png" alt="Solar Power 2" height="983px" width="542px"></div>
+        <p class="underline">How to Save Money Page</p>
+        <div class="single-img"><img src="img/SaveMoneySP.png" alt="Save Money 1" height="983px" width="542px"></div>
+        <div class="single-img"><img src="img/SaveMoney2SP.png" alt="Save Money 2" height="983px" width="542px"></div>
     </div>
+</div>
 
-<script>
+<hr class="line" />
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+<div class="wrapper">
+    <h1>DES502 Bank Website Design</h1>
+<hr class="line" />
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        } 
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        } 
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-
-    }
-</script>
-
-</body>
-<footer> 
-
-</footer>
-</html>
+    <div class="img-area">  
+        <p class="underline">High Fidelity - Log In Page</p>
+        <div class="single-img"><img src="img/HFLogInPage.png" alt="Log In Page" height="983px" width="542px"></div>
+        <p class="underline">High Fidelity - Customer Registration Page</p>
+        <div class="single-img"><img src="img/HFCustomerRegistration.png" alt="Customer Registration Page" height="983px" width="542px"></div>
+        <p class="underline">High Fidelity - Profile Creation Page</p>
+        <div class="single-img"><img src="img/HFProfileCreation.png" alt="Profile Creation Page" height="983px" width="542px"></div>
+    </div>
+</div>
+</div>
