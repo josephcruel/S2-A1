@@ -11,6 +11,13 @@ body {
     font-family: 'Outfit', sans-serif;
     --color1: #FFF ;
     --color2: #5811f3 ;
+    min-height: 100vh;
+}
+
+footer {
+    padding:50px;
+    background: steelblue;
+    margin-top: auto;
 }
 .nav-bar {
     width: 100%;
@@ -121,8 +128,51 @@ body {
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
 }
 
+/*-------------- Introduction -----------------*/
+.DES-WEB-IMG {
+    position: absolute;
+    animation: round 13.5s infinite;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
 
-/*----------------About Me-------------------*/
+}
+
+.intro-img { 
+    display: flex; 
+    flex-direction:row;
+    position: relative; 
+    width: 500px; 
+    height: 500px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    border: 6px solid blue;
+    margin-top: 30px;
+} 
+
+.intro-img img { 
+    width: 100%; 
+    height: auto; 
+    margin-left: -50px; 
+}
+
+.front-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0 50px 0;
+}
+
+.front-page h1 {
+    font-size: 50px;
+}
+
+.front-image {
+    flex-basis: 55px;
+}
+
+/*--------------- About Me ------------------*/
 
 #about {
     padding: 80px 0;
@@ -157,12 +207,11 @@ body {
 .intro-text {
     margin-bottom: 10px;
     font-size: 25px;
-
 }
 
 .tab-titles {
-     display: flex;
-     margin: 20px 0 40px;
+    display: flex;
+    margin: 20px 0 40px;
 }
 
 .tab-links {
@@ -208,7 +257,9 @@ body {
 }
 
 
-/*----------Small Screen-------------*/
+/*---------- Small Screen -------------*/
+
+
 
 @media(max-width: 950px){
     .sub-title {
@@ -230,6 +281,9 @@ body {
         font-size: 16px;
         margin-right: 20px;
 
+    }
+    .front-image {
+        flex-basis: 100%;
     }
 
 }
@@ -270,22 +324,13 @@ body {
         align-items: center;
     }
 
-}
-
-
-@media(max-width: 400px) {
-    .img-area-2 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-        grid-gap: 0px;
+    .intro-img {
+        flex-direction: column;
     }
+
 }
 
-
-
-
-/*-------------Images---------------*/
+/*------------- Images ---------------*/
 
 .container-skills {
     padding: 10px 10%;
@@ -314,38 +359,55 @@ body {
 }
 
 .img-area-3 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    grid-gap: 0px;
+    margin: 50px auto;
+    width: 50rem;
+    height: 30rem;
+    overflow: hidden;
+    border: 10px solid;
+    border-top-color: #2725a2;
+    border-left-color: #2725a2;
+    border-bottom-color: #2725a2;
+    border-right-color: #2725a2;
+    position: relative;
 }
 
-.img-area-3 p{
-    display: flex;
-    text-align: center;
-    padding: 15px;
-    margin: 45px 0 30px 0;
-    font-weight: 600;
-    font-size: 20px;
-}
+
+/*------ Slideshow animation ---------- */
+
+@keyframes round {
+    25% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+  }
+
+  img:nth-child(1) {
+    animation-delay: 8s;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 4s;
+  }
+  
+  img:nth-child(3) {
+    animation-delay: 0s;
+  }
+
 .photography-img img {
     height: 300px;
     border: 2px solid #fff;
     position: relative;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 7px;;
 }
 
 .double-img img {
     height: 300px;
-    border: 2px solid #fff;
     position: relative;
-    border: 2px solid black;
+    border: 2px solid #2725a2;
     border-radius: 7px;;
-}
-
-.text {
-    grid-column:span 3;
 }
 
 .line {
@@ -356,59 +418,6 @@ body {
 .underline {
     text-decoration: underline;
 } 
-
-/* .container-skills {
-    padding: 10px 10%;
-    padding-top: 20px;;
-}
-
-.wrapper h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.img-area {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-area p {
-    display: flex;
-    text-align: center;
-    padding: 15px;
-    margin: 45px 0 30px 0;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.single-img {
-    padding: 15px;
-    
-}
-
-.single-img img {
-    border-radius: 20px;
-    border: 4px solid #000;
-}
-
-img:hover {
-    opacity: .5;
-    transition: .9s;
-}
-
-.line {
-    border: 2px solid #ccc;
-    margin-bottom: 10px;
-}
-
-.underline {
-    text-decoration: underline;
-} */
 
 /*---------------Contact Me------------------*/
 
